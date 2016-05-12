@@ -54,6 +54,9 @@ if(isset($_POST['submit'])){
 			mysqli_stmt_close($stmt);
 			
 			mysqli_close($dbc);
+
+            echo 'Form has been succesfully submitted!<br /><br />';
+            echo 'Now close this window and go to Getinfo.php';
 		} else {
 			
 			echo 'Error Occoured<br />';
@@ -70,4 +73,4 @@ if(isset($_POST['submit'])){
 				
 ?>
 </body>
-</html>	
+</html>
