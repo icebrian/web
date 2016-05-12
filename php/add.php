@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>nepeters form</title>
+<title>icebrian.net :: PHP App.</title>
 </head>
 <body>
 <?php
@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
 		
 		require_once('./connect.php');
 		
-		$query = "INSERT INTO nepetersForm (name, email, message) VALUES (?,?,?)";
+		$query = "INSERT INTO form1 (name, email, message) VALUES (?,?,?)";
 		$stmt = mysqli_prepare($dbc, $query);
 		
 		if ($stmt === FALSE) {

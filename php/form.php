@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link href="Default.css" rel="stylesheet" />
-    <title>Container Demo..</title>
+    <link href="styles.css" rel="stylesheet" />
+    <title>icebrian.net :: PHP App.</title>
 
     <script language="JavaScript">
 
@@ -18,7 +18,7 @@
 
     <div id="container">
         
-        <div id="logo">nepeters.com</div>
+        <div id="logo">PHP App.</div>
         <div id="space"></div>
         <div id="form">
                 <form id="form" name="form" action="add.php" method="post"><center>

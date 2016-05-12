@@ -2,7 +2,7 @@
 	
 require_once('./connect.php');
 
-$query = "SELECT name, email, message From nepetersForm";
+$query = "SELECT name, email, message FROM form1";
 
 $response = mysqli_query($dbc, $query);
 
