@@ -24,10 +24,10 @@ try {
     $mail->Port = 25;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('smtpmailer@icebrian.ml', 'SMTPMailer');
-    $mail->addAddress('istvan.cebrian@gmail.com', 'Istvan Cebrian');     // Add a recipient
+    $mail->setFrom('smtpmailer@icebrian.ml', 'SMTP Auth');
+    $mail->addAddress($_POST['to'], 'Your Name');     // Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
-    //$mail->addReplyTo('istvan.cebrian@gmail.com', 'Information');
+    //$mail->addReplyTo('ellen@example.com', 'Information');
     //$mail->addCC('cc@example.com');
     //$mail->addBCC('bcc@example.com');
 
@@ -36,10 +36,10 @@ try {
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
     //Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->isHTML(true);                                  	// Set email format to HTML
+    $mail->Subject = 'SMTP Auth Email Sending';
+    $mail->Body    = $_POST['comments'];					// HTML
+    $mail->AltBody = $_POST['comments'];					// Non-HTML
 
     $mail->send();
     echo 'Message has been sent';

@@ -3,7 +3,8 @@
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = $_POST['to'];
-    $email_subject = $_POST['subject'];
+    //$email_subject = $_POST['subject'];
+	$email_subject = "Relay via locahost postfix";
  
     function died($error) {
         // your error code can go here

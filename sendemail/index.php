@@ -8,14 +8,14 @@
   <input  type="text" name="to" maxlength="100" size="30">
  </td>
 </tr>
-<tr>
+<!-- tr>
  <td valign="top">
   <label for="subject">Subject *</label>
  </td>
  <td valign="top">
   <input  type="text" name="subject" maxlength="100" size="30">
  </td>
-</tr>
+</tr -->
 <tr>
  <td valign="top">
   <label for="comments">Body *</label>
